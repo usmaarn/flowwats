@@ -1,0 +1,5 @@
+
+.btn {
+    @apply px-5 py-3 transition-transform duration-150 hover:scale-95 rounded-full;
+    @apply text-sm font-medium bg-primary text-white;
+}

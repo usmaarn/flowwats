@@ -1,0 +1,20 @@
+
+name: "flowwats"
+
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - .:/src/app
+      - /src/app/node_modules
+    ports:
+      - "127.0.0.1:3008:3000"
+    networks:
+      - flowwats
+
+networks:
+  flowwats:
+    driver: bridge
+    name: flowwats
+    external: true
